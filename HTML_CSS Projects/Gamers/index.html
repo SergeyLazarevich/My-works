@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Games</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="body">
+    <div class="container">
+        <header class="header">
+            <div class="header-info">
+                <div class="header-info-text">
+                    <a href="./index.html"><img class="logo" src="./images/LOGO.png" alt="logo"></a>
+                    <div class="header-phone">
+                        <img class="icon-phone" src="./images/тел.png">
+                        <p class="header-phone-text">+123 456 7890</p>
+                    </div>
+                    <div class="header-mail">
+                        <img class="icon-mail" src="./images/email.png">
+                        <p class="header-mail-text">info@example.com</p>
+                    </div>
+                    <form class="form-s" action="/search.php">
+                        <input class="search" type="text" placeholder="Search" name="search">
+                        <button class="btn-search" type="submit">
+                            <svg width="20" height="19" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title />
+                                <path
+                                    d="M20.56,18.44l-4.67-4.67a7,7,0,1,0-2.12,2.12l4.67,4.67a1.5,1.5,0,0,0,2.12,0A1.49,1.49,0,0,0,20.56,18.44ZM5,10a5,5,0,1,1,5,5A5,5,0,0,1,5,10Z"
+                                    fill="#fff" /></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a class="menu-bar active" href="#">Home</a></li>
+                <li><a class="menu-bar" href="#about">About</a></li>
+                <li><a class="menu-bar" href="#services">Services</a></li>
+                <li><a class="menu-bar" href="#gallery">Gallery</a></li>
+                <li><a class="menu-bar" href="#news">News</a></li>
+                <li><a class="menu-bar" href="#team">Team</a></li>
+                <li><a class="menu-bar" href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="progressbar" id="progressbar"></div>
+            <div class="header-titles">
+                <h3 class="header-h3">Nunc eget nibh</h3>
+                <h1 class="header-h1">Morbi in nisl auctor</h1>
+                <div class="social-icon">
+                    <a class="social" href="https://www.facebook.com/" target="_blank">
+                        <svg class="svg" height="40px" version="1.1" viewBox="0 0 50 50" width="40px"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title />
+                            <defs />
+                            <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+                                <g fill="#fff" id="Facebook">
+                                    <path
+                                        d="M25,50 C38.8071194,50 50,38.8071194 50,25 C50,11.1928806 38.8071194,0 25,0 C11.1928806,0 0,11.1928806 0,25 C0,38.8071194 11.1928806,50 25,50 Z M25,47 C37.1502651,47 47,37.1502651 47,25 C47,12.8497349 37.1502651,3 25,3 C12.8497349,3 3,12.8497349 3,25 C3,37.1502651 12.8497349,47 25,47 Z M26.8145197,36 L26.8145197,24.998712 L30.0687449,24.998712 L30.5,21.2076072 L26.8145197,21.2076072 L26.8200486,19.3101227 C26.8200486,18.3213442 26.9207209,17.7915341 28.4425538,17.7915341 L30.4769629,17.7915341 L30.4769629,14 L27.2222769,14 C23.3128757,14 21.9368678,15.8390937 21.9368678,18.9318709 L21.9368678,21.2080366 L19.5,21.2080366 L19.5,24.9991413 L21.9368678,24.9991413 L21.9368678,36 L26.8145197,36 Z M26.8145197,36"
+                                        id="Oval-1" />
+                                </g>
+                            </g>
+                        </svg></a>
+                    <a class="social" href="https://twitter.com/?lang=ru" target="_blank"><svg class="svg"
+                            enable-background="new 0 0 40 40" height="40px" id="Layer_1" version="1.1"
+                            viewBox="0 0 40 40" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M20,2.348c9.925,0,18,8.075,18,18s-8.074,18-18,18s-18-8.075-18-18S10.075,2.348,20,2.348 M20,0.348    c-11.046,0-20,8.954-20,20c0,11.047,8.954,20,20,20c11.046,0,20-8.953,20-20C40,9.302,31.047,0.348,20,0.348L20,0.348z"
+                                        fill="#fff" />
+                                </g>
+                                <path
+                                    d="M31.516,13.206c-0.846,0.376-1.758,0.63-2.713,0.744c0.975-0.585,1.725-1.511,2.078-2.614   c-0.914,0.542-1.926,0.935-3.002,1.146c-0.861-0.919-2.09-1.492-3.449-1.492c-2.609,0-4.725,2.116-4.725,4.726   c0,0.37,0.042,0.73,0.122,1.076c-3.927-0.197-7.408-2.078-9.739-4.938c-0.407,0.699-0.64,1.51-0.64,2.376   c0,1.64,0.834,3.086,2.102,3.934c-0.774-0.025-1.503-0.237-2.14-0.592c0,0.02,0,0.04,0,0.06c0,2.29,1.629,4.199,3.791,4.634   c-0.396,0.107-0.814,0.166-1.245,0.166c-0.305,0-0.601-0.031-0.889-0.086c0.602,1.877,2.346,3.244,4.414,3.281   c-1.617,1.268-3.654,2.023-5.868,2.023c-0.381,0-0.757-0.023-1.127-0.066c2.091,1.34,4.575,2.123,7.243,2.123   c8.692,0,13.444-7.201,13.444-13.445c0-0.204-0.004-0.408-0.014-0.611C30.082,14.986,30.883,14.153,31.516,13.206z"
+                                    fill="#fff" />
+                            </g>
+                        </svg></a>
+                    <a class="social" href="https://rss.com/blog/how-do-rss-feeds-work/" target="_blank">
+                        <svg class="svg" width="40px" height="40px" enable-background="new 0 0 512 512" id="Layer_1"
+                            version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g>
+                                <path
+                                    d="M257.2,6.1c137.8,0,248.9,112.6,248.3,252.7c-0.6,137.9-112,250.5-251.4,249   C117.9,506.3,7.2,394.4,8.5,254.4C9.8,117.2,119.9,6.4,257.2,6.1z M257.1,25.9c-124.2-0.4-227.7,100.8-229,228.6   c-1.3,130.2,102.6,232.5,226.4,233.8c125.9,1.3,230.7-100.6,231.4-229.2C486.5,129.5,384.3,25.9,257.1,25.9z"
+                                    fill="#fff" />
+                                <path
+                                    d="M122.9,130.9c0-7.3,0.2-14.7-0.1-22c-0.2-3.8,0.8-5.1,4.9-5c24,0.4,47.5,3.9,70.4,10.8   c73.9,22.2,129.2,67.8,166.5,135c22.5,40.6,33.5,84.5,34.6,131c0.1,4.5-1.1,5.6-5.5,5.5c-14.3-0.3-28.7-0.2-43,0   c-3.7,0.1-4.7-0.9-4.8-4.7c-1.6-57.3-21-107.7-59.5-150.3c-32.9-36.4-73.7-59.6-122-69.1c-12.3-2.4-24.7-4-37.2-3.9   c-3.3,0-4.3-1-4.2-4.2C123,146.2,122.9,138.5,122.9,130.9z"
+                                    fill="#fff" />
+                                <path
+                                    d="M278.2,386c-7.3,0-14.7-0.2-22,0.1c-3.6,0.1-4.3-1.2-4.5-4.5c-1.9-42.4-19.5-76.9-53.4-102.6   c-20.8-15.8-44.4-23.8-70.4-24.8c-4.1-0.2-5.2-1.3-5.2-5.4c0.3-14.7,0.2-29.3,0-44c-0.1-3.9,1-5.1,5-4.9c43.8,1.6,82.1,17,114.8,46   c24,21.3,41.2,47.3,51.9,77.5c6.7,18.8,10.1,38.2,10.6,58.2c0.1,3.4-0.8,4.7-4.4,4.5C293.2,385.8,285.7,386,278.2,386z"
+                                    fill="#fff" />
+                                <path
+                                    d="M122.8,348.1c0-21,16.1-37.2,36.8-37.1c20.5,0.1,36.6,16.6,36.6,37.5c0,20.6-16.7,37.5-36.9,37.3   C138.8,385.7,122.8,369,122.8,348.1z"
+                                    fill="#fff" />
+                            </g>
+                        </svg></a>
+                    <a class="social" href="https://vk.com/" target="_blank"><svg class="svg"
+                            enable-background="new 0 0 1024 1024" height="40px" id="Layer_1" version="1.1"
+                            viewBox="0 0 1024 1024" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Background">
+                                <path
+                                    d="M983.766,312.727c-25.785-60.972-62.694-115.728-109.705-162.744   C827.05,102.966,772.299,66.049,711.329,40.257C648.194,13.548,581.14,0.004,512,0c-69.104,0-136.155,13.54-199.289,40.243   c-60.969,25.787-115.721,62.699-162.735,109.71c-47.014,47.011-83.929,101.761-109.72,162.728   C13.548,375.814,0.004,442.865,0,511.97c-0.004,69.109,13.533,136.165,40.234,199.304   c25.785,60.973,62.696,115.728,109.707,162.743c47.011,47.018,101.762,83.935,162.732,109.727   c63.136,26.708,130.19,40.253,199.323,40.257h0.009c69.104,0,136.153-13.54,199.288-40.243   c60.969-25.787,115.72-62.699,162.733-109.709c47.013-47.01,83.929-101.76,109.72-162.728   c26.708-63.134,40.251-130.186,40.255-199.29C1024.004,442.921,1010.467,375.866,983.766,312.727z M512.004,976.328h-0.03   c-124.026-0.007-240.627-48.313-328.323-136.019C95.957,752.604,47.665,635.999,47.672,511.973   c0.015-256.016,208.312-464.3,464.356-464.3c124.026,0.007,240.626,48.312,328.32,136.017   c87.695,87.706,135.986,204.311,135.979,328.337C976.313,768.043,768.018,976.328,512.004,976.328z"
+                                    fill="#fff" />
+                            </g>
+                            <g id="VK">
+                                <path
+                                    d="M154.504,399.328c7.7,20.099,17.191,39.48,26.987,58.622   c23.277,45.48,47.248,89.673,79.387,129.647c32.479,40.396,70.825,79.544,115.996,105.676c12.563,7.268,25.77,13.4,39.527,18.061   c53.079,17.979,111.295,16.267,129.273,4.281c17.979-11.986-3.424-90.75,12.842-100.167c16.267-9.418,45.375,11.13,66.777,29.965   c21.403,18.834,37.669,35.1,49.656,47.942c7.506,8.042,12.79,17.64,22.575,23.376c16.186,9.486,37.753,8.435,55.808,8.485   c10.065,0.029,20.133,0.063,30.199-0.063c6.803-0.084,13.608,0.136,20.406-0.193c11.171-0.542,25.779-4.952,24.941-18.927   c-0.198-3.304-0.931-7.256-2.244-10.306c-2.822-6.555-6.797-13.357-11.069-19.067c-22.258-29.75-37.026-44.946-48.155-56.933   c-11.13-11.984-56.933-55.22-59.929-63.78c-2.996-8.562-3.96-12.36,4.548-23.918c8.508-11.559,27.129-40.72,41.684-61.694   c9.128-13.155,17.42-26.91,25.612-40.659c9.659-16.21,18.743-32.813,26.485-50.029c3.462-7.698,6.604-14.711,4.46-23.337   c-1.437-5.779-4.687-10.856-10.739-12.282c-3.304-0.778-6.909-0.857-10.29-0.857c-12.627,0-45.589,0-45.589,0   c-5.958,0-11.917-0.087-17.876-0.076c-6.109,0.011-12.269-0.037-18.36,0.485c-8.666,0.742-13.977,7.425-18.336,14.163   c-5.333,8.245-10.187,16.823-15.36,25.172c-3.537,5.705-6.998,11.455-10.397,17.243c-5.312,9.04-10.784,17.983-16.256,26.927   c-2.271,3.71-4.55,7.416-6.789,11.146c-6.421,10.699-62.069,83.898-73.198,86.896s-14.982,2.142-14.982-20.547   c0-22.687,0-151.533,0-151.533s-0.854-9.935-10.272-9.935s-53.099,0-53.099,0h-90.09c0,0-21.188,0.088-13.697,19.138   c7.491,19.049,29.644,24.828,29.644,56.611c0,31.782,0,124.565,0,124.565s-3.745,27.931-27.931,4.815   c-19.059-18.215-34.762-39.751-48.637-62.081c-14.426-23.215-26.048-47.333-36.4-72.602c-2.961-7.227-5.893-14.466-8.934-21.659   c-3.174-7.509-6.319-15.031-9.363-22.593c-3.535-8.784-7.317-20.265-16.849-24.309c-4.792-2.033-10.092-1.933-15.2-1.932   c-18.943,0.005-37.885,0.058-56.827,0.022c-5.558-0.01-11.116-0.016-16.674-0.002c-13.123,0.031-29.445-0.356-32.558,16.038   c-1.794,9.443,1.772,19.523,4.757,28.367C151.321,391.511,152.99,395.375,154.504,399.328z"
+                                    fill="#fff" id="Vk" />
+                            </g>
+                        </svg></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="about" id="about">
+
+                <div class="about-flex">
+                    <div>
+                        <h2 class="about-title">About Us!</h2>
+                        <p class="about-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                            fugit,
+                            sed
+                            quia consequuntur
+                            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Ut&nbsp;enim
+                            ad&nbsp;minima
+                            veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                            nisi ut&nbsp;aliquid ex&nbsp;ea&nbsp;commodi consequatur?</p>
+                        <p class="about-text">
+                            Quis autem vel eum iure reprehenderit qui in&nbsp;ea&nbsp;voluptate velit esse quam nihil
+                            molestiae
+                            consequatur,
+                            vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    </div>
+                    <img class="about-img" src="./images/about.png" alt="about">
+                </div>
+            </div>
+            <div class="services" id="services">
+                <h2 class="services-title">Services</h2>
+                <div class="services-block-main">
+
+                    <div class="services-blocks-one">
+                        <div class="services-block">
+                            <div>
+                                <h4 class="services-block-title active-title">Repreh Qui In Ea Voluptate</h4>
+                                <p class="services-text">Itaque earum rerum hic tenetur a&nbsp;sapiente delectus,
+                                    ut&nbsp;aut
+                                    reiciendis voluptatibus maiores alias consequatur aut
+                                    perferendis doloribus asperiores repellat.</p>
+                            </div>
+                            <img class="services-img" src="./images/ветка.png">
+                        </div>
+                        <div class="services-block">
+                            <div>
+                                <h4 class="services-block-title">Aut Perferendis Doloribus</h4>
+                                <p class="services-text">Itaque earum rerum hic tenetur a&nbsp;sapiente delectus,
+                                    ut&nbsp;aut
+                                    reiciendis voluptatibus maiores alias consequatur aut
+                                    perferendis doloribus asperiores repellat.</p>
+                            </div>
+                            <img class="services-img" src="./images/$.png">
+                        </div>
+                        <div class="services-block">
+                            <div>
+                                <h4 class="services-block-title">Maiores Alias Consequatur</h4>
+                                <p class="services-text">Itaque earum rerum hic tenetur a&nbsp;sapiente delectus,
+                                    ut&nbsp;aut
+                                    reiciendis voluptatibus maiores alias consequatur aut
+                                    perferendis doloribus asperiores repellat.</p>
+                            </div>
+                            <img class="services-img" src="./images/poll.png">
+                        </div>
+                    </div>
+
+                    <div class="services-blocks-two">
+                        <div class="services-block">
+                            <img class="services-img" src="./images/arrow-up-bold-circle-outline.png">
+                            <div>
+                                <h4 class="services-block-title2">Voluptatibus Maiores Alias</h4>
+                                <p class="services-text2">Itaque earum rerum hic tenetur a&nbsp;sapiente delectus,
+                                    ut&nbsp;aut
+                                    reiciendis voluptatibus maiores alias consequatur aut
+                                    perferendis doloribus asperiores repellat.</p>
+                            </div>
+                        </div>
+                        <div class="services-block">
+                            <img class="services-img" src="./images/home.png">
+                            <div>
+                                <h4 class="services-block-title2">Dut Aut Reiciendis Maiores</h4>
+                                <p class="services-text2">Itaque earum rerum hic tenetur a&nbsp;sapiente delectus,
+                                    ut&nbsp;aut
+                                    reiciendis voluptatibus maiores alias consequatur aut
+                                    perferendis doloribus asperiores repellat.</p>
+                            </div>
+                        </div>
+                        <div class="services-block">
+                            <img class="services-img" src="./images/settings.png">
+                            <div>
+                                <h4 class="services-block-title2">Doloribus Volupta Maiores</h4>
+                                <p class="services-text2">Itaque earum rerum hic tenetur a&nbsp;sapiente delectus,
+                                    ut&nbsp;aut
+                                    reiciendis voluptatibus maiores alias consequatur aut
+                                    perferendis doloribus asperiores repellat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery" id="gallery">
+                <h2 class="gallery-title">Our Gallery</h2>
+                <div class="gallery-block">
+                    <div class="gallery-card">
+                        <img src="./images/assasin.png" class="card-img" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Assasin’s Creed: <span class="small-title">Rogue</span></h5>
+                            <button class="btn-card">Buy</button>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="./images/raider.png" class="card-img" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Tomb Raider</h5>
+                            <button class="btn-card">Buy</button>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="./images/sonofrome.png" class="card-img" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Ryse: <span class="small-title">Son Of Rome</span></h5>
+                            <button class="btn-card">Buy</button>
+                        </div>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="./images/wow.png" class="card-img" alt="card">
+                        <div class="card-body">
+                            <h5 class="card-title">World Of Warcraft: <br>
+                                <span class="small-title">Wrath Of The Linch King</span></h5>
+                            <button class="btn-card">Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="test">
+                <h2 class="test-title">Testimonial</h2>
+                <img class="test-img" src="./images/кавычки.png" alt="pic">
+                <div class="pagination">
+                    <a href="#" class="circle-left"></a>
+                    <a href="#" class="circle circle-active">
+                        <p class="test-text">Donec feugiat tellus sem, laoreet iaculis orci lobortis vel. Sed sed luctus
+                            orci,
+                            at&nbsp;lacinia
+                            risus. Ut&nbsp;porttitor ante ac&nbsp;tincidunt elementum. Curabitur ex&nbsp;dolor,
+                            condimentum
+                            vitae nunc vel, pulvinar semper justo. Vestibulum et&nbsp;aliquet magna, maximus dapibus
+                            enim.
+                            Vestibulum ex&nbsp;lectus, posuere eu&nbsp;viverra&nbsp;at, mattis et&nbsp;enim. Nam
+                            efficitur sem
+                            et&nbsp;lectus fringilla, at&nbsp;pharetra nulla luctus. Nunc cursus, augue
+                            ac&nbsp;ultricies
+                            volutpat, neque erat congue justo, ac&nbsp;pretium tellus eros a&nbsp;neque. Integer ipsum
+                            sem,
+                            consectetur a&nbsp;mollis&nbsp;ac, cursus eu&nbsp;ipsum.
+                            <br>
+                            <br>
+                            <br>
+                            <span class="test-small-text">JOHN SMITH&nbsp;&mdash;</span> FOUNDER</p>
+                    </a>
+                    <a href="#" class="circle-right"></a>
+                </div>
+            </div>
+            <!--             <div class="news">
+            </div> -->
+            <div class="team">
+                <h2 class="team-title">Our Team</h2>
+                <div class="team-block">
+                    <div class="team-card">
+                        <img src="./images/mary.png" class="team-img" alt="team">
+                        <div class="team-body">
+                            <h5 class="team-card-title">Mary Jane</h5>
+                            <p class="team-text">Vestibulum</p>
+                            <div class="team-social">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="vlo2a">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#vlo2a&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="9" height="15" transform="translate(11 7)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAPCAYAAAA2yOUNAAAAnElEQVQoU8XPMQ5BURBG4c8CRK0RiYZFKEShIKIRy7AGGxAsQyQiGjailFiCQjQKmeS+5HqF6Ex1Z+Zk/nMrPquGJaaoptWyUoJOGJRm6xzq4JIBLzywyaExDgl6oo579Dk0wT5BNzSLqwGF5BAN9NIiYnbpvQ1ohXlJNm8XP0N9dNHGLJ0I4UiIOv8sXuR//d2foBGOKfuKVuHxBo47ITJwmzuXAAAAAElFTkSuQmCC" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="oir6a">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#oir6a&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="15" height="13" transform="translate(8 8)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAABQ0lEQVQ4T43Sz4vNYRTH8dd57k1KU4RkoTElKxQbq9mSspiGLdKUlYZSyj9go6RkoSS72ZkmO0sLpWZqppSajew1CzQl7nP0mDt1XV8/zvI8n/fn/HoCe/AF33RG/0zIu+QkuZJynv4hvn8KetdC3kz1JL6O8SdCWevw/JziRoPnQj7BeqqX8WZbXJSnydUO+GMqlwL7Q3mPXU0ULFSxwOB1iMfEhXE4uF/VWw0+UJQHyUX0R4SbGGBiHE6uUx+1ts+HfDEU9rqX9ms2xSyDxVY5QlnGqf8BmybVvdhocIuDofecPL019t8iX6Y8O9zPT+HOUN7h8L+qD0+6Ogqjdy64Qx7H7i6T4GFV57ffxls8FsoijvwO51LKmdF8g6eLciWZxtE/VLxX1dsd9zZVlLmkue7Djq1/Hh9CvqrqM7ztMv0BnXJZ8z4C/EQAAAAASUVORK5CYII=" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="4obxa">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#4obxa&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="14" height="14" transform="translate(8 8)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABOElEQVQ4T4XSIUjdURTH8Y8IggadMGSCGNQkyASb1VcMBothZWhQZ3HNtjEtwoJloDMo2gSbMiwTTbJgMjjGhkEHCoIMRJApypH7h8vjPbzlcn/n9z33nnNPDf7iDn9wiB1898yqwUMFzxG+YLkaH+A/NFYxHGAMP8vjAcaqRR/eYLQs0T2GsZXDAU6kOvdwnYIf8KnslsFU/5NcXmPUNotNdCGe+jJL0IGTSmDh2cUAGnCG5hQ4RncBfkQPSmjKsp+iHZ34nelvsV40p9AnsZiZ4qn9mMF80s/RWoBTqZMBvcZ+Bg9hGzeoT3opwK8Yz4yhxZesJO0Cr7CA90lbqjQ5S3iHK7xIxthb8CudfwQYTWjLboxmxZdsYCTpMT2r2XjeBtiLtQR/SyP2H9OYS2Dsn3GJuhiUR+xgPo/psAPSAAAAAElFTkSuQmCC" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="vl8aa">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#vl8aa&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="19" height="11" transform="translate(6 9)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAALCAYAAACd1bY6AAABOklEQVQ4T43Tv0uXURgF8I+aCeHUHmiC1KIFFvgDFPEHhKsguAgOEV9ICKQ/QBwFBwdBxcE/QVpCwUURQXAoGqqpBiVwCpRwiEfvFx5eFDzLvc859557z/O+twHv0IJH+IM1N3iLj3iMf/iJUfwteheGyzyGiwb8QEciY8MOmrGPV0l7iZNSH6A3aWdhNov1RH7GeKlXUEtaJ75jEHuJj2ktzB6W2z1J4gh2sYy5xLfjFw7Rk/hIMhZmgRlsJvErXmMDU4l/hkksJO4UL3AdMxBjnBYGdXxBG1oT9w3PK/Em8KluUte6cVRiV9bfWV7haYl+faOMD1i6r1NZF7/MEH5XzaLewvQdhtHoQHygjOjxYNUsFjRhEfNorGzqw3HpUdVw+zaz3MP3GCgv5AL9OC+vZRVv8ACXEfM/0oE1VxqVIR8AAAAASUVORK5CYII=" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="./images/peter.png" class="team-img" alt="team">
+                        <div class="team-body">
+                            <h5 class="team-card-title">Peter Parker</h5>
+                            <p class="team-text">Vestibulum</p>
+                            <div class="team-social">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="vlo2a">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#vlo2a&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="9" height="15" transform="translate(11 7)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAPCAYAAAA2yOUNAAAAnElEQVQoU8XPMQ5BURBG4c8CRK0RiYZFKEShIKIRy7AGGxAsQyQiGjailFiCQjQKmeS+5HqF6Ex1Z+Zk/nMrPquGJaaoptWyUoJOGJRm6xzq4JIBLzywyaExDgl6oo579Dk0wT5BNzSLqwGF5BAN9NIiYnbpvQ1ohXlJNm8XP0N9dNHGLJ0I4UiIOv8sXuR//d2foBGOKfuKVuHxBo47ITJwmzuXAAAAAElFTkSuQmCC" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="oir6a">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#oir6a&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="15" height="13" transform="translate(8 8)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAABQ0lEQVQ4T43Sz4vNYRTH8dd57k1KU4RkoTElKxQbq9mSspiGLdKUlYZSyj9go6RkoSS72ZkmO0sLpWZqppSajew1CzQl7nP0mDt1XV8/zvI8n/fn/HoCe/AF33RG/0zIu+QkuZJynv4hvn8KetdC3kz1JL6O8SdCWevw/JziRoPnQj7BeqqX8WZbXJSnydUO+GMqlwL7Q3mPXU0ULFSxwOB1iMfEhXE4uF/VWw0+UJQHyUX0R4SbGGBiHE6uUx+1ts+HfDEU9rqX9ms2xSyDxVY5QlnGqf8BmybVvdhocIuDofecPL019t8iX6Y8O9zPT+HOUN7h8L+qD0+6Ogqjdy64Qx7H7i6T4GFV57ffxls8FsoijvwO51LKmdF8g6eLciWZxtE/VLxX1dsd9zZVlLmkue7Djq1/Hh9CvqrqM7ztMv0BnXJZ8z4C/EQAAAAASUVORK5CYII=" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="4obxa">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#4obxa&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="14" height="14" transform="translate(8 8)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABOElEQVQ4T4XSIUjdURTH8Y8IggadMGSCGNQkyASb1VcMBothZWhQZ3HNtjEtwoJloDMo2gSbMiwTTbJgMjjGhkEHCoIMRJApypH7h8vjPbzlcn/n9z33nnNPDf7iDn9wiB1898yqwUMFzxG+YLkaH+A/NFYxHGAMP8vjAcaqRR/eYLQs0T2GsZXDAU6kOvdwnYIf8KnslsFU/5NcXmPUNotNdCGe+jJL0IGTSmDh2cUAGnCG5hQ4RncBfkQPSmjKsp+iHZ34nelvsV40p9AnsZiZ4qn9mMF80s/RWoBTqZMBvcZ+Bg9hGzeoT3opwK8Yz4yhxZesJO0Cr7CA90lbqjQ5S3iHK7xIxthb8CudfwQYTWjLboxmxZdsYCTpMT2r2XjeBtiLtQR/SyP2H9OYS2Dsn3GJuhiUR+xgPo/psAPSAAAAAElFTkSuQmCC" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="vl8aa">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#vl8aa&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="19" height="11" transform="translate(6 9)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAALCAYAAACd1bY6AAABOklEQVQ4T43Tv0uXURgF8I+aCeHUHmiC1KIFFvgDFPEHhKsguAgOEV9ICKQ/QBwFBwdBxcE/QVpCwUURQXAoGqqpBiVwCpRwiEfvFx5eFDzLvc859557z/O+twHv0IJH+IM1N3iLj3iMf/iJUfwteheGyzyGiwb8QEciY8MOmrGPV0l7iZNSH6A3aWdhNov1RH7GeKlXUEtaJ75jEHuJj2ktzB6W2z1J4gh2sYy5xLfjFw7Rk/hIMhZmgRlsJvErXmMDU4l/hkksJO4UL3AdMxBjnBYGdXxBG1oT9w3PK/Em8KluUte6cVRiV9bfWV7haYl+faOMD1i6r1NZF7/MEH5XzaLewvQdhtHoQHygjOjxYNUsFjRhEfNorGzqw3HpUdVw+zaz3MP3GCgv5AL9OC+vZRVv8ACXEfM/0oE1VxqVIR8AAAAASUVORK5CYII=" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="./images/john.png" class="team-img" alt="team">
+                        <div class="team-body">
+                            <h5 class="team-card-title">John Watson</h5>
+                            <p class="team-text">Vestibulum</p>
+                            <div class="team-social">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="vlo2a">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#vlo2a&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="9" height="15" transform="translate(11 7)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAPCAYAAAA2yOUNAAAAnElEQVQoU8XPMQ5BURBG4c8CRK0RiYZFKEShIKIRy7AGGxAsQyQiGjailFiCQjQKmeS+5HqF6Ex1Z+Zk/nMrPquGJaaoptWyUoJOGJRm6xzq4JIBLzywyaExDgl6oo579Dk0wT5BNzSLqwGF5BAN9NIiYnbpvQ1ohXlJNm8XP0N9dNHGLJ0I4UiIOv8sXuR//d2foBGOKfuKVuHxBo47ITJwmzuXAAAAAElFTkSuQmCC" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="oir6a">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#oir6a&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="15" height="13" transform="translate(8 8)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAABQ0lEQVQ4T43Sz4vNYRTH8dd57k1KU4RkoTElKxQbq9mSspiGLdKUlYZSyj9go6RkoSS72ZkmO0sLpWZqppSajew1CzQl7nP0mDt1XV8/zvI8n/fn/HoCe/AF33RG/0zIu+QkuZJynv4hvn8KetdC3kz1JL6O8SdCWevw/JziRoPnQj7BeqqX8WZbXJSnydUO+GMqlwL7Q3mPXU0ULFSxwOB1iMfEhXE4uF/VWw0+UJQHyUX0R4SbGGBiHE6uUx+1ts+HfDEU9rqX9ms2xSyDxVY5QlnGqf8BmybVvdhocIuDofecPL019t8iX6Y8O9zPT+HOUN7h8L+qD0+6Ogqjdy64Qx7H7i6T4GFV57ffxls8FsoijvwO51LKmdF8g6eLciWZxtE/VLxX1dsd9zZVlLmkue7Djq1/Hh9CvqrqM7ztMv0BnXJZ8z4C/EQAAAAASUVORK5CYII=" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="4obxa">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#4obxa&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="14" height="14" transform="translate(8 8)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABOElEQVQ4T4XSIUjdURTH8Y8IggadMGSCGNQkyASb1VcMBothZWhQZ3HNtjEtwoJloDMo2gSbMiwTTbJgMjjGhkEHCoIMRJApypH7h8vjPbzlcn/n9z33nnNPDf7iDn9wiB1898yqwUMFzxG+YLkaH+A/NFYxHGAMP8vjAcaqRR/eYLQs0T2GsZXDAU6kOvdwnYIf8KnslsFU/5NcXmPUNotNdCGe+jJL0IGTSmDh2cUAGnCG5hQ4RncBfkQPSmjKsp+iHZ34nelvsV40p9AnsZiZ4qn9mMF80s/RWoBTqZMBvcZ+Bg9hGzeoT3opwK8Yz4yhxZesJO0Cr7CA90lbqjQ5S3iHK7xIxthb8CudfwQYTWjLboxmxZdsYCTpMT2r2XjeBtiLtQR/SyP2H9OYS2Dsn3GJuhiUR+xgPo/psAPSAAAAAElFTkSuQmCC" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="vl8aa">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#vl8aa&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="19" height="11" transform="translate(6 9)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAALCAYAAACd1bY6AAABOklEQVQ4T43Tv0uXURgF8I+aCeHUHmiC1KIFFvgDFPEHhKsguAgOEV9ICKQ/QBwFBwdBxcE/QVpCwUURQXAoGqqpBiVwCpRwiEfvFx5eFDzLvc859557z/O+twHv0IJH+IM1N3iLj3iMf/iJUfwteheGyzyGiwb8QEciY8MOmrGPV0l7iZNSH6A3aWdhNov1RH7GeKlXUEtaJ75jEHuJj2ktzB6W2z1J4gh2sYy5xLfjFw7Rk/hIMhZmgRlsJvErXmMDU4l/hkksJO4UL3AdMxBjnBYGdXxBG1oT9w3PK/Em8KluUte6cVRiV9bfWV7haYl+faOMD1i6r1NZF7/MEH5XzaLewvQdhtHoQHygjOjxYNUsFjRhEfNorGzqw3HpUdVw+zaz3MP3GCgv5AL9OC+vZRVv8ACXEfM/0oE1VxqVIR8AAAAASUVORK5CYII=" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="./images/steven.png" class="team-img" alt="team">
+                        <div class="team-body">
+                            <h5 class="team-card-title">Steven Wilson</h5>
+                            <p class="team-text">Vestibulum</p>
+                            <div class="team-social">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="vlo2a">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#vlo2a&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="9" height="15" transform="translate(11 7)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAPCAYAAAA2yOUNAAAAnElEQVQoU8XPMQ5BURBG4c8CRK0RiYZFKEShIKIRy7AGGxAsQyQiGjailFiCQjQKmeS+5HqF6Ex1Z+Zk/nMrPquGJaaoptWyUoJOGJRm6xzq4JIBLzywyaExDgl6oo579Dk0wT5BNzSLqwGF5BAN9NIiYnbpvQ1ohXlJNm8XP0N9dNHGLJ0I4UiIOv8sXuR//d2foBGOKfuKVuHxBo47ITJwmzuXAAAAAElFTkSuQmCC" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="oir6a">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#oir6a&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="15" height="13" transform="translate(8 8)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAABQ0lEQVQ4T43Sz4vNYRTH8dd57k1KU4RkoTElKxQbq9mSspiGLdKUlYZSyj9go6RkoSS72ZkmO0sLpWZqppSajew1CzQl7nP0mDt1XV8/zvI8n/fn/HoCe/AF33RG/0zIu+QkuZJynv4hvn8KetdC3kz1JL6O8SdCWevw/JziRoPnQj7BeqqX8WZbXJSnydUO+GMqlwL7Q3mPXU0ULFSxwOB1iMfEhXE4uF/VWw0+UJQHyUX0R4SbGGBiHE6uUx+1ts+HfDEU9rqX9ms2xSyDxVY5QlnGqf8BmybVvdhocIuDofecPL019t8iX6Y8O9zPT+HOUN7h8L+qD0+6Ogqjdy64Qx7H7i6T4GFV57ffxls8FsoijvwO51LKmdF8g6eLciWZxtE/VLxX1dsd9zZVlLmkue7Djq1/Hh9CvqrqM7ztMv0BnXJZ8z4C/EQAAAAASUVORK5CYII=" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="4obxa">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#4obxa&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="14" height="14" transform="translate(8 8)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABOElEQVQ4T4XSIUjdURTH8Y8IggadMGSCGNQkyASb1VcMBothZWhQZ3HNtjEtwoJloDMo2gSbMiwTTbJgMjjGhkEHCoIMRJApypH7h8vjPbzlcn/n9z33nnNPDf7iDn9wiB1898yqwUMFzxG+YLkaH+A/NFYxHGAMP8vjAcaqRR/eYLQs0T2GsZXDAU6kOvdwnYIf8KnslsFU/5NcXmPUNotNdCGe+jJL0IGTSmDh2cUAGnCG5hQ4RncBfkQPSmjKsp+iHZ34nelvsV40p9AnsZiZ4qn9mMF80s/RWoBTqZMBvcZ+Bg9hGzeoT3opwK8Yz4yhxZesJO0Cr7CA90lbqjQ5S3iHK7xIxthb8CudfwQYTWjLboxmxZdsYCTpMT2r2XjeBtiLtQR/SyP2H9OYS2Dsn3GJuhiUR+xgPo/psAPSAAAAAElFTkSuQmCC" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <defs>
+                                        <clipPath id="vl8aa">
+                                            <path fill="#fff" d="M0 0h30v30H0z" />
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#000" stroke-miterlimit="20" stroke-width="4"
+                                                d="M0 0v0h30v30H0v0z" clip-path="url(&quot;#vl8aa&quot;)" />
+                                        </g>
+                                        <g>
+                                            <image width="19" height="11" transform="translate(6 9)"
+                                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAALCAYAAACd1bY6AAABOklEQVQ4T43Tv0uXURgF8I+aCeHUHmiC1KIFFvgDFPEHhKsguAgOEV9ICKQ/QBwFBwdBxcE/QVpCwUURQXAoGqqpBiVwCpRwiEfvFx5eFDzLvc859557z/O+twHv0IJH+IM1N3iLj3iMf/iJUfwteheGyzyGiwb8QEciY8MOmrGPV0l7iZNSH6A3aWdhNov1RH7GeKlXUEtaJ75jEHuJj2ktzB6W2z1J4gh2sYy5xLfjFw7Rk/hIMhZmgRlsJvErXmMDU4l/hkksJO4UL3AdMxBjnBYGdXxBG1oT9w3PK/Em8KluUte6cVRiV9bfWV7haYl+faOMD1i6r1NZF7/MEH5XzaLewvQdhtHoQHygjOjxYNUsFjRhEfNorGzqw3HpUdVw+zaz3MP3GCgv5AL9OC+vZRVv8ACXEfM/0oE1VxqVIR8AAAAASUVORK5CYII=" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="go_to_top"></a>
+            </div>
+            <div class="subscribe">
+
+                <h2 class="subscribe-title">Subscribe with Us</h2>
+                <form class="form-subs" action="/email.php">
+                    <input class="subscribe-email" type="email" placeholder="Email" name="email">
+                    <button class="btn-subs" type="submit">Subscribe
+                    </button>
+                </form>
+
+            </div>
+            <div class="contacts">
+                <h2 class="contacts-title">Contact Us</h2>
+                <div class="contacts-block">
+                    <div>
+                        <h4 class="contact-mini-title">Get in touch with us</h4>
+                        <p class="contact-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,sheets
+                            containing Lorem Ipsum passages sed&nbsp;do, At&nbsp;vero eos et&nbsp;accusamus et
+                            iusto odio digs qui blanditiis
+                            <br>
+                            <br>
+                            Leningradsky AVE 39, BLDG 79
+                            MOSCOW 125167, Russia
+                            <br>
+                            <br>
+                            Telephone : +00&nbsp;111&nbsp;222 3333
+                            <br>
+                            <br>
+                            FAX : +1&nbsp;888&nbsp;888 4444
+                            <br>
+                            <br>
+                            Email :<span style="color: #f44336;"> mail@example.com </span></p>
+                    </div>
+                    <form class="forms" action="/email" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" required class="name-contact" placeholder="Name"><label
+                                for="name"></label>
+                            <input type="email" id="email" required class="email-contact" placeholder="Email"><label
+                                for="email"></label>
+                            <textarea type="text" id="text" required class="message-contact"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn-contact" type="submit">Submit</button>
+                    </form>
+                </div>
+                <h2 class="contacts-title2">Route Map</h2>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.8917539864383!2d37.53958681604768!3d55.7951174961949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a2049b3fa8b%3A0x9b3da4e1adfa2f35!2z0JvQtdC90LjQvdCz0YDQsNC00YHQutC40Lkg0L_RgC3Rgi4sIDM5LCBCTERHIDc5LCDQnNC-0YHQutCy0LAsIDEyNTE2Nw!5e0!3m2!1sru!2sru!4v1611079331342!5m2!1sru!2sru"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </main>
+        <footer class="footer">
+            <p class="footer-text">&copy;&nbsp;2017 Историческе Игры. Все права защищены</p>
+            <a href="#" class="go_to_top"></a>
+        </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
