@@ -1,8 +1,5 @@
 # Recommendation_systems
 
-## Итоговый проект курса:
-*"Рекомендательные системы"*
-
 ## Стек:
 
 *ML: sklearn, pandas, numpy, catboost, implicit, lightfm*
